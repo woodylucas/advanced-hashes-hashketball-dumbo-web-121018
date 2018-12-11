@@ -137,6 +137,7 @@ def num_points_scored(name)
   #iterate down to players hash with each method 
   #remember an iteration of a hash takes a key and a value 
   game_hash.each do |franchise, stats_hash|
+    binding.pry
     players_hash = stats_hash[:players]
     players_hash.each do |description|
       if description[:name] == name 
